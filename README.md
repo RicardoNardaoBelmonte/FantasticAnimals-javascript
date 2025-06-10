@@ -19,8 +19,6 @@ Manipulação do DOM
 
 Fetch de dados de APIs
 
-Uso de funções assíncronas (async/await)
-
 Criação de animações e efeitos dinâmicos
 
 Implementação de módulos JavaScript (import/export)
