@@ -10,137 +10,172 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <div class="grid-container">
 
-    <nav class="menu js-menu">
-        <ul>
-            <li><a href="#animais">Animais</a></li>
-            <li data-dropdown>
-                <a href="sobre.html">Sobre</a>
-                <ul class="dropdown-menu">
-                    <li><a href="empresa.html">Empresa</a></li>
-                    <li><a href="equipe.html">Equipe</a></li>
-                    <li><a href="socios.html">Socios</a></li>
-                    <li><a href="investidores.html">Investidores</a></li>
+        <nav class="menu" data-anime="menu">
+            <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+                <ul data-menu="list" id="menu">
+                <li><a href="#animais">Animais</a></li>
+                <li data-dropdown><a href="sobre.html">Sobre</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="empresa.html">Empresa</a></li>
+                        <li><a href="equipe.html">Equipe</a></li>
+                        <li><a href="socios.html">Socios</a></li>
+                        <li><a href="investidores.html">investidores</a></li>
+                    </ul>
+                </li>
+                <li><a href="#faq">Faq</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#numeros">Numeros</a></li>
+                <li><a data-modal="abrir" href="login.html">Login ►</a></li>
+            </ul>
+        </nav>
+        
+        <section class="grid-section animais js-scroll" id="animais">
+            <h1 class="titulo">Animais Fantásticos</h1>
+            <ul class="animais-lista" data-tab="menu">
+                <li><img src="img/imagem1.jpg" alt="foto1"></li>
+                <li><img src="img/imagem2.jpg" alt="foto2"></li>
+                <li><img src="img/imagem3.jpg" alt="foto3"></li>
+                <li><img src="img/imagem4.jpg" alt="foto4"></li>
+                <li><img src="img/imagem5.jpg" alt="foto5"></li>
+                <li><img src="img/imagem6.jpg" alt="foto6"></li>
+            </ul>
+            
+            <div class="animais-description" data-tab = 'content'>
+                <div data-anime="show-right">
+                    <h2>Raposa</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae illo ipsam, architecto, esse officia expedita fugiat vero sed labore libero earum distinctio molestiae dolorum error?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat enim unde, molestiae animi id atque obcaecati nihil quia reprehenderit totam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ea, laudantium culpa suscipit sapiente commodi reiciendis, velit aliquam quaerat, rem ipsam voluptas harum eligendi dicta.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque amet praesentium autem magni! Magnam cum provident, id mollitia repellendus optio?</p>
+                </div>
+                
+                <div data-anime="show-right">
+                    <h2>Esquilo</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae illo ipsam, architecto, esse officia expedita fugiat vero sed labore libero earum distinctio molestiae dolorum error?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat enim unde, molestiae animi id atque obcaecati nihil quia reprehenderit totam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ea, laudantium culpa suscipit sapiente commodi reiciendis, velit aliquam quaerat, rem ipsam voluptas harum eligendi dicta.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque amet praesentium autem magni! Magnam cum provident, id mollitia repellendus optio?</p>
+                </div>
+                
+                <div data-anime="show-down">
+                    <h2>Urso</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae illo ipsam, architecto, esse officia expedita fugiat vero sed labore libero earum distinctio molestiae dolorum error?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat enim unde, molestiae animi id atque obcaecati nihil quia reprehenderit totam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ea, laudantium culpa suscipit sapiente commodi reiciendis, velit aliquam quaerat, rem ipsam voluptas harum eligendi dicta.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque amet praesentium autem magni! Magnam cum provident, id mollitia repellendus optio?</p>
+                </div>
+                
+                <div data-anime="show-down">
+                    <h2>Lobo</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae illo ipsam, architecto, esse officia expedita fugiat vero sed labore libero earum distinctio molestiae dolorum error?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat enim unde, molestiae animi id atque obcaecati nihil quia reprehenderit totam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ea, laudantium culpa suscipit sapiente commodi reiciendis, velit aliquam quaerat, rem ipsam voluptas harum eligendi dicta.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque amet praesentium autem magni! Magnam cum provident, id mollitia repellendus optio?</p>
+                </div>
+                
+                <div data-anime="show-right">
+                    <h2>Macaco</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae illo ipsam, architecto, esse officia expedita fugiat vero sed labore libero earum distinctio molestiae dolorum error?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat enim unde, molestiae animi id atque obcaecati nihil quia reprehenderit totam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ea, laudantium culpa suscipit sapiente commodi reiciendis, velit aliquam quaerat, rem ipsam voluptas harum eligendi dicta.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque amet praesentium autem magni! Magnam cum provident, id mollitia repellendus optio?</p>
+                </div>
+                
+                <div data-anime="show-right">
+                    <h2>Leão</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae illo ipsam, architecto, esse officia expedita fugiat vero sed labore libero earum distinctio molestiae dolorum error?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat enim unde, molestiae animi id atque obcaecati nihil quia reprehenderit totam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ea, laudantium culpa suscipit sapiente commodi reiciendis, velit aliquam quaerat, rem ipsam voluptas harum eligendi dicta.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque amet praesentium autem magni! Magnam cum provident, id mollitia repellendus optio?</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="grid-section faq js-scroll" id="faq">
+            <h1 class="titulo">FAQ</h1>
+            <dl class="faq-lista" data-anime="acordion">
+                <dt>Qual a idade dos animais?</dt>
+                <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum voluptates eligendi laboriosam sint eaque quia quidem vel illo tenetur maiores!</dd>
+                
+                <dt>Eles são Fantásticos?</dt>
+                <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus placeat, esse dolorem dicta commodi odio?</dd>
+                
+                <dt>Qual a diferença?</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia autem facere voluptate incidunt? Eos laboriosam, rem necessitatibus quidem illo vel voluptate voluptas quae totam quasi!</dd>
+                
+                <dt>Como proteger?</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga alias deserunt sit cumque officiis, laborum odit?</dd>
+            </dl>
+        </section>
+
+        <section class="grid-section galeria js-scroll" id="galeria">
+            <ul class="custom-controls">
+                <li><img src="./img/slides/foto1-thumb.jpg" alt=""></li>
+                <li><img src="./img/slides/foto2-thumb.jpg" alt=""></li>
+                <li><img src="./img/slides/foto3-thumb.jpg" alt=""></li>
+                <li><img src="./img/slides/foto4-thumb.jpg" alt=""></li>
+                <li><img src="./img/slides/foto5-thumb.jpg" alt=""></li>
+                <li><img src="./img/slides/foto6-thumb.jpg" alt=""></li>
+            </ul>
+            <div class="div-slide">
+                <ul class="slide">
+                    <li><img src="img/slides/foto1.jpg" alt=""></li>
+                    <li><img src="img/slides/foto2.jpg" alt=""></li>
+                    <li><img src="img/slides/foto3.jpg" alt=""></li>
+                    <li><img src="img/slides/foto4.jpg" alt=""></li>
+                    <li><img src="img/slides/foto5.jpg" alt=""></li>
+                    <li><img src="img/slides/foto6.jpg" alt=""></li>
                 </ul>
-            </li>
-            <li><a href="#faq">Faq</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <li><a data-modal="abrir" href="login.html">Login ►</a></li>
-        </ul>
-    </nav>
-
-    <section class="grid-section animais" id="animais">
-        <h1 class="titulo">Animais Fantásticos</h1>
-        <ul class="animais-lista js-tabmenu">
-            <li><img src="img/imagem1.jpg" alt="foto1"></li>
-            <li><img src="img/imagem2.jpg" alt="foto2"></li>
-            <li><img src="img/imagem3.jpg" alt="foto3"></li>
-            <li><img src="img/imagem4.jpg" alt="foto4"></li>
-            <li><img src="img/imagem5.jpg" alt="foto5"></li>
-            <li><img src="img/imagem6.jpg" alt="foto6"></li>
-        </ul>
-
-        <div class="animais-description js-tabcontent">
-            <div>
-                <h2>Raposa</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae illo ipsam, architecto, esse officia expedita fugiat vero sed labore libero earum distinctio molestiae dolorum error?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat enim unde, molestiae animi id atque obcaecati nihil quia reprehenderit totam.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ea, laudantium culpa suscipit sapiente commodi reiciendis, velit aliquam quaerat, rem ipsam voluptas harum eligendi dicta.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque amet praesentium autem magni! Magnam cum provident, id mollitia repellendus optio?</p>
             </div>
+        </section>
+        
+        <section class="grid-section numeros js-scroll" id="numeros">
+            <h1 class="titulo">Números</h1>
 
-            <div>
-                <h2>Esquilo</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae illo ipsam, architecto, esse officia expedita fugiat vero sed labore libero earum distinctio molestiae dolorum error?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat enim unde, molestiae animi id atque obcaecati nihil quia reprehenderit totam.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ea, laudantium culpa suscipit sapiente commodi reiciendis, velit aliquam quaerat, rem ipsam voluptas harum eligendi dicta.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque amet praesentium autem magni! Magnam cum provident, id mollitia repellendus optio?</p>
+            <div class="numeros-grid">
+            </div>
+        </section>
+
+        <section class="grid-section contato js-scroll" id="contato">
+            <h1 class="titulo">Contato</h1>
+            <div class="mapa" data-tooltip aria-label="Enedreço Proximo ao Estacionamento">
+                <img src="img/mapa.png" alt="foto-mapa">
             </div>
             
-            <div>
-                <h2>Urso</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae illo ipsam, architecto, esse officia expedita fugiat vero sed labore libero earum distinctio molestiae dolorum error?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat enim unde, molestiae animi id atque obcaecati nihil quia reprehenderit totam.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ea, laudantium culpa suscipit sapiente commodi reiciendis, velit aliquam quaerat, rem ipsam voluptas harum eligendi dicta.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque amet praesentium autem magni! Magnam cum provident, id mollitia repellendus optio?</p>
-            </div>
+            <ul class="dados">
+                <li>nardaoricardo@Gmail.com</li>
+                <li>55 991573321</li>
+                <li>Rua Jamais Vista n° 777</li>
+                <li>Rio grande do Sul - RS</li>
+                <li>Doe <span class="btc-preco">0</span> bitcoin para nos ajudar</li>
+                <li data-semana="1,2,3,4,5" data-horario="8,18">Seg a Sex das 8 às 18</li>
+            </ul>
+        </section>
 
-            <div>
-                <h2>Lobo</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae illo ipsam, architecto, esse officia expedita fugiat vero sed labore libero earum distinctio molestiae dolorum error?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat enim unde, molestiae animi id atque obcaecati nihil quia reprehenderit totam.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ea, laudantium culpa suscipit sapiente commodi reiciendis, velit aliquam quaerat, rem ipsam voluptas harum eligendi dicta.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque amet praesentium autem magni! Magnam cum provident, id mollitia repellendus optio?</p>
-            </div>
+        <footer class="copy">
+            <p>Todos os direitos reservados.</p>
+        </footer>
 
-            <div>
-                <h2>Macaco</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae illo ipsam, architecto, esse officia expedita fugiat vero sed labore libero earum distinctio molestiae dolorum error?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat enim unde, molestiae animi id atque obcaecati nihil quia reprehenderit totam.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ea, laudantium culpa suscipit sapiente commodi reiciendis, velit aliquam quaerat, rem ipsam voluptas harum eligendi dicta.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque amet praesentium autem magni! Magnam cum provident, id mollitia repellendus optio?</p>
-            </div>
-            
-            <div>
-                <h2>Leão</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae illo ipsam, architecto, esse officia expedita fugiat vero sed labore libero earum distinctio molestiae dolorum error?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat enim unde, molestiae animi id atque obcaecati nihil quia reprehenderit totam.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ea, laudantium culpa suscipit sapiente commodi reiciendis, velit aliquam quaerat, rem ipsam voluptas harum eligendi dicta.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque amet praesentium autem magni! Magnam cum provident, id mollitia repellendus optio?</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="grid-section faq" id="faq">
-        <h1 class="titulo">FAQ</h1>
-        <dl class="faq-lista js-acordion">
-            <dt>Qual a idade dos animais?</dt>
-            <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum voluptates eligendi laboriosam sint eaque quia quidem vel illo tenetur maiores!</dd>
-            
-            <dt>Eles são Fantásticos?</dt>
-            <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus placeat, esse dolorem dicta commodi odio?</dd>
-           
-            <dt>Qual a diferença?</dt>
-            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia autem facere voluptate incidunt? Eos laboriosam, rem necessitatibus quidem illo vel voluptate voluptas quae totam quasi!</dd>
-            
-            <dt>Como proteger?</dt>
-            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga alias deserunt sit cumque officiis, laborum odit?</dd>
-        </dl>
-    </section>
-
-    <section class="grid-section contato" id="contato">
-        <h1 class="titulo">Contato</h1>
-        <div class="mapa">
-            <img src="img/mapa.png" alt="foto-mapa">
-        </div>
-
-        <ul class="dados">
-            <li>nardaoricardo@Gmail.com</li>
-            <li>55 991573321</li>
-            <li>Rua Jamais Vista n° 777</li>
-            <li>Rio grande do Sul - RS</li>
-        </ul>
-    </section>
-
-    <footer class="copy">
-        <p>Todos os direitos reservados.</p>
-    </footer>
-
+    </div>
+    
     <section class="modal-container" data-modal="container">
         <div class="modal">
-            <button class="fechar" data-modal="fechar">X</button>
+            <button data-modal="fechar" class="fechar">X</button>
             <form action="">
-                <label for="email">Email</label>
-                <input type="text" form="email" id="email">
-                <label for="senha">Senha</label>
-                <input type="password" form="senha" id="senha">
+                <label for="emai">Email</label>
+                <input type="text" for="email" id="email">
+                <label for="senha">senha</label>
+                <input type="password" for="senha" id="senha">
                 <button type="submit">Entrar</button>
             </form>
         </div>
-
     </section>
-
+    
     <script type="module" src="js/script.js"></script>
 </body>
 </html>
