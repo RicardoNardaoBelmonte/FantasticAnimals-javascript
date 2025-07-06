@@ -1,25 +1,41 @@
-# FantasticAnimals-javascript
-This is a short website with html,css and javascript to improve my skills with javascript, this project comes from a curse i'm taking at the moment from Origamid JavaScript Completo ES6.
+# Fantastic Animals - JavaScript
 
-## Tecnologias Utilizadas
+This is a website project developed only with HTML, CSS, and JavaScript, created as part of my studies in the JavaScript Complete ES6 course by Origamid.
+The main goal was to practice modern JavaScript concepts, organize code using modules, integrate with APIs, and add dynamic effects to the interface.
+
+During development, I also built a fully functional slider using only JavaScript, without external libraries, to improve my programming logic and DOM manipulation skills.
+
+## Technologies Used
 
 - HTML
 
-Utilizado para estruturar o conteúdo da página, definindo os elementos como seções, listas, links, imagens e textos.
+Structure of the page content, including sections, lists, links, and images.
 
-- CSS
+-CSS
 
-Utilizado para estilizar a interface, definindo cores, tamanhos, fontes, espaçamentos, responsividade e animações.
+Styling the interface with colors, fonts, spacing, responsiveness, and animations.
 
-- JavaScript
+-JavaScript
 
-Utilizado para adicionar interatividade ao site, incluindo funcionalidades como:
+DOM manipulation to add interactivity.
 
-Manipulação do DOM
+Fetching data from APIs.
 
-Fetch de dados de APIs
+Code modularization with import and export.
 
-Criação de animações e efeitos dinâmicos
+Creating animations, effects, and the custom slider.
 
-Implementação de módulos JavaScript (import/export)
+-ESLint
 
+Tool to standardize code style, fix indentation, avoid typos, and follow best development practices.
+
+## Main dependencies
+
+live-server — to run the project locally and reload the page on every change.
+
+eslint — to keep the code standardized and free of common errors.
+
+## About the course
+
+Project developed during the **JavaScript Complete ES6** course by Origamid, focusing on practical and modern applications of JavaScript.  
+Includes lots of practice and exercises to help you get used to JavaScript syntax.
