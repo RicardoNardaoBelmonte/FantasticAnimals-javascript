@@ -11,11 +11,11 @@ During development, I also built a fully functional slider using only JavaScript
 
 Structure of the page content, including sections, lists, links, and images.
 
--CSS
+- CSS
 
 Styling the interface with colors, fonts, spacing, responsiveness, and animations.
 
--JavaScript
+- JavaScript
 
 DOM manipulation to add interactivity.
 
@@ -25,7 +25,7 @@ Code modularization with import and export.
 
 Creating animations, effects, and the custom slider.
 
--ESLint
+- ESLint
 
 Tool to standardize code style, fix indentation, avoid typos, and follow best development practices.
 
